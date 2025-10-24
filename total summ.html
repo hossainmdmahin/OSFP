@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<title>total deposit summary</title>
+
+</head>
+
+<body style="background-color:#C0C0C0; margin:0; padding:20px; font-family:Arial, sans-serif; font-size: 12px;">
+
+
+<div style="width:210mm; height:297mm; background-color:#FFFFFF; padding:20px; box-sizing:border-box; color:#000000;">
+
+
+
+<h2>জুলাই ২০২৫ - জুন ২০২৬ আমানত বিবরন</h2>
+
+<table border="1" cellspacing="0" cellpadding="5">
+
+<tr>
+    <th></th>
+    <th>২০২৫</th>
+    <th>২০২৫</th>
+    <th>২০২৫</th>
+    <th>২০২৫</th>
+    <th>২০২৫</th>
+    <th>২০২৫</th>
+    <th>২০২৬</th>
+    <th>২০২৬</th>
+    <th>২০২৬</th>
+    <th>২০২৬</th>
+    <th>২০২৬</th>
+    <th>২০২৬</th>
+    <th></th>
+  </tr>
+
+  <tr>
+    <th>নাম</th>
+    <th>জুলাই</th>
+    <th>আগস্ট</th>
+    <th>সেপ্টেম্বর</th>
+    <th>অক্টোবর</th>
+    <th>নভেম্বর</th>
+    <th>ডিসেম্বর</th>
+    <th>জানুয়ারি</th>
+    <th>ফেব্রুয়ারি</th>
+    <th>মার্চ</th>
+    <th>এপ্রিল</th>
+    <th>মে</th>
+    <th>জুন</th>
+    <th>বার্ষিক মোট</th>
+  </tr>
+
+  <tr>
+    <td>মানিক</td>
+    <td id="r1"></td>
+    <td id="r2"></td>
+    <td id="r3"></td>
+    <td id="r4"></td>
+    <td id="r5"></td>
+    <td id="r6"></td>
+    <td id="r7"></td>
+    <td id="r8"></td>
+    <td id="r9"></td>
+    <td id="r10"></td>
+    <td id="r11"></td>
+    <td id="r12"></td>
+    <td id="rTotal"></td>
+  </tr>
+
+  <tr>
+    <td>সেলিম</td>
+    <td id="s1"></td>
+    <td id="s2"></td>
+    <td id="s3"></td>
+    <td id="s4"></td>
+    <td id="s5"></td>
+    <td id="s6"></td>
+    <td id="s7"></td>
+    <td id="s8"></td>
+    <td id="s9"></td>
+    <td id="s10"></td>
+    <td id="s11"></td>
+    <td id="s12"></td>
+    <td id="sTotal"></td>
+  </tr>
+
+  <tr>
+    <td>hamza</td>
+    <td id="m1"></td>
+    <td id="m2"></td>
+    <td id="m3"></td>
+    <td id="m4"></td>
+    <td id="m5"></td>
+    <td id="m6"></td>
+    <td id="m7"></td>
+    <td id="m8"></td>
+    <td id="m9"></td>
+    <td id="m10"></td>
+    <td id="m11"></td>
+    <td id="m12"></td>
+    <td id="mTotal"></td>
+  </tr>
+  
+
+  <tr>
+    <th colspan="13" align="right">মোট :</th>
+    <th id="grandTotal"></th>
+  </tr>
+
+</table>
+
+
+</div>
+<script>
+// --- মানিক ---
+var r1=0,r2=6200,r3=3000,r4=0,r5=0,r6=0,r7=0,r8=0,r9=0,r10=0,r11=0,r12=0;
+var rTotal = r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12;
+document.getElementById("r1").innerHTML = r1;
+document.getElementById("r2").innerHTML = r2;
+document.getElementById("r3").innerHTML = r3;
+document.getElementById("r4").innerHTML = r4;
+document.getElementById("r5").innerHTML = r5;
+document.getElementById("r6").innerHTML = r6;
+document.getElementById("r7").innerHTML = r7;
+document.getElementById("r8").innerHTML = r8;
+document.getElementById("r9").innerHTML = r9;
+document.getElementById("r10").innerHTML = r10;
+document.getElementById("r11").innerHTML = r11;
+document.getElementById("r12").innerHTML = r12;
+document.getElementById("rTotal").innerHTML = rTotal;
+
+// --- সেলিম ১ ---
+var s1=3100,s2=3100,s3=3000,s4=0,s5=0,s6=0,s7=0,s8=0,s9=0,s10=0,s11=0,s12=0;
+var sTotal = s1+s2+s3+s4+s5+s6+s7+s8+s9+s10+s11+s12;
+document.getElementById("s1").innerHTML = s1;
+document.getElementById("s2").innerHTML = s2;
+document.getElementById("s3").innerHTML = s3;
+document.getElementById("s4").innerHTML = s4;
+document.getElementById("s5").innerHTML = s5;
+document.getElementById("s6").innerHTML = s6;
+document.getElementById("s7").innerHTML = s7;
+document.getElementById("s8").innerHTML = s8;
+document.getElementById("s9").innerHTML = s9;
+document.getElementById("s10").innerHTML = s10;
+document.getElementById("s11").innerHTML = s11;
+document.getElementById("s12").innerHTML = s12;
+document.getElementById("sTotal").innerHTML = sTotal;
+
+// --- মাহিন ---
+var m1=3100,m2=3100,m3=3000,m4=0,m5=0,m6=0,m7=0,m8=0,m9=0,m10=0,m11=0,m12=0;
+var mTotal = m1+m2+m3+m4+m5+m6+m7+m8+m9+m10+m11+m12;
+document.getElementById("m1").innerHTML = m1;
+document.getElementById("m2").innerHTML = m2;
+document.getElementById("m3").innerHTML = m3;
+document.getElementById("m4").innerHTML = m4;
+document.getElementById("m5").innerHTML = m5;
+document.getElementById("m6").innerHTML = m6;
+document.getElementById("m7").innerHTML = m7;
+document.getElementById("m8").innerHTML = m8;
+document.getElementById("m9").innerHTML = m9;
+document.getElementById("m10").innerHTML = m10;
+document.getElementById("m11").innerHTML = m11;
+document.getElementById("m12").innerHTML = m12;
+document.getElementById("mTotal").innerHTML = mTotal;
+
+
+// --- grand total ---
+document.getElementById("grandTotal").innerHTML = rTotal+mTotal+sTotal;
+
+</script>
+</body>
+</html>
